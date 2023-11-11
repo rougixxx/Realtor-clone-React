@@ -26,8 +26,8 @@ export default function SignIn() {
             <img src="https://images.unsplash.com/flagged/photo-1564767609342-620cb19b2357?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2V5fGVufDB8fDB8fHww"
              alt="key image from unsplash"  className="w-full rounded-2xl"/>
         </div>
-        <div className="w-full md:w-[67%] lg:w-[40%] md:relative">
-            <form className="lg:ml-20">
+        <div className="w-full md:w-[67%] lg:w-[40%] md:relative lg:ml-20">
+            <form className="">
                 <input type="email"  id="email" value={email} onChange={onChange}
                 placeholder="Email address"  className="mb-6 w-full bg-white border-gray-300 rounded transition ease-in-out"/>
 
@@ -39,7 +39,7 @@ export default function SignIn() {
                 )}/>) : (<AiFillEye className="absolute right-3 top-3 text-xl cursor-pointer" onClick={() => setShowPassword( (prev) => !prev)}/>) }
 
                 </div>
-                <div className="flex justify-between space-x-5 whitespace-nowrap text-sm sm:text-base ">
+                <div className="flex justify-between  whitespace-nowrap text-sm sm:text-base ">
                     <p className="mb-6 mr-auto">Don't Have an account?
                       <Link to="/sign-up" className="text-red-600 hover:text-red-700 transition duration-200 ml-1">Register</Link>
                          </p>
@@ -48,7 +48,7 @@ export default function SignIn() {
                          </p>
                 </div>
             </form>
-            <button className="w-full md:w-1/2 text-center bg-blue-600 text-white px-7 py-3 text-sm font-medium uppercase rounded shadow-md hover:bg-blue-700
+            <button className="w-full text-center bg-blue-600 text-white px-7 py-3 text-sm font-medium uppercase rounded shadow-md hover:bg-blue-700
             transition duration-150 ease-in-out active:bg-blue-800 hover:shadow-lg md:absolute  md:left-1/2 md:-translate-x-1/2 ">
                 Submit
             </button>

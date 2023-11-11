@@ -19,13 +19,13 @@ export default function ForgetPassword() {
              alt="key image from unsplash"  className="w-full rounded-2xl"/>
         </div>
         <div className="w-full md:w-[67%] lg:w-[40%] md:relative">
-            <form className="lg:ml-20">
+            <form>
        
                 <input type="email"  id="email" value={email} onChange={onChange}
                 placeholder="Email address"  className="mb-6 w-full bg-white border-gray-300 rounded transition ease-in-out"/>
 
           
-                <div className="flex justify-between space-x-5 whitespace-nowrap text-sm sm:text-base ">
+                <div className="flex justify-between whitespace-nowrap text-sm sm:text-base ">
                     <p className="mb-6 mr-auto"> Don't Have an account?
                       <Link to="/sign-up" className="text-red-600 hover:text-red-700 transition duration-200 ml-1">Register</Link>
                          </p>
